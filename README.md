@@ -25,7 +25,7 @@ git clone https://github.com/last-kenpachi/SpeakAI.git
 ```
 Now run
 ```
-cd SpeakSmartAI
+cd SpeakAI
 pip install –r requirements.txt
 streamlit run main.py
 ```
