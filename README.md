@@ -16,12 +16,12 @@ SpeakAI guides you through a series of thought-provoking questions and prompts r
 
 With SpeakAI, you'll refine your communication skills, gain confidence in your interactions, and adapt your communication style to various contexts. Whether you're looking to excel in professional settings, social situations, or personal relationships, SpeakAI is your trusted partner on your journey to unlocking your true communication potential.
 
-## Run
+### Try it out
 
-make sure to have git installed
+Make sure to have git installed : https://git-scm.com/
 
 ```
-git clone https://github.com/HemantKumar01/SpeakSmartAI.git
+git clone https://github.com/last-kenpachi/SpeakAI.git
 ```
 Now run
 ```
