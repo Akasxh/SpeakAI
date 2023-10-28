@@ -21,7 +21,7 @@ With SpeakAI, you'll refine your communication skills, gain confidence in your i
 Make sure to have git installed : https://git-scm.com/
 
 ```
-git clone https://github.com/last-kenpachi/SpeakAI.git
+git clone https://github.com/Akasxh/SpeakAI.git
 ```
 Now run
 ```
