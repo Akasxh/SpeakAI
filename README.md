@@ -1,31 +1,37 @@
-# SpeakAI
+# TutorAI
 
-#### SpeakAI: Unlocking Your Communication Potential
+#### TutorAI: Unlocking Your Potential
 
-SpeakAI is an innovative web application designed to empower individuals with enhanced communication skills in an engaging and interactive manner. With SpeakAI, you gain the ability to harness the full potential of your communication prowess.
+TutorAI is an innovative educational platform powered by OpenAI's GPT-3 and Langchain technologies. It offers three core features - "Learn," "Talk," and "Test" - to enhance the learning experience. Built using the Streamlit framework, TutorAI aims to revolutionize how learners interact with and consume educational content.
 
-#### Interactive Learning Experience
+#### Interactive Learning
 
-Our platform offers an interactive learning experience like no other. You have the freedom to choose from a variety of real-life situations and scenarios that you'd like to improve your communication skills in.
+Our platform offers an interactive learning experience like no other. You have the freedom to choose from a variety of real-life situations and scenarios in which you'd like to improve your skills.
 
-#### Live Feedback and Personalized Guidance
+### Key Features
 
-SpeakAI guides you through a series of thought-provoking questions and prompts relevant to your chosen situation. As you respond, the magic unfolds – you receive live feedback and intelligent, personalized suggestions.
+##### Learn:
 
-#### Unlock Your True Communication Potential
+In the "Learn" module, users can input questions or topics they want to learn about. TutorAI leverages GPT-3's natural language processing capabilities to generate informative, human-like responses. Whether it's explanations, historical context, scientific concepts, or language translation, TutorAI acts as a personalized tutor, providing detailed, context-aware explanations.
 
-With SpeakAI, you'll refine your communication skills, gain confidence in your interactions, and adapt your communication style to various contexts. Whether you're looking to excel in professional settings, social situations, or personal relationships, SpeakAI is your trusted partner on your journey to unlocking your true communication potential.
+#### Talk:
+
+The "Talk" feature transforms TutorAI into an interactive conversation partner. Users can engage in natural conversations with the AI, seeking answers to their queries, discussing ideas, or simply engaging in stimulating dialogue. Whether it's brushing up on a foreign language or having a deep discussion about a favorite book, TutorAI is ready to chat.
+
+#### Test:
+
+The "Test" function is a powerful tool for assessment. Users can create custom quizzes and tests on any subject, and TutorAI will generate questions with multiple-choice answers. After taking the test, users receive immediate feedback and explanations for the correct answers. This feature is ideal for both self-assessment and practicing for exams or certifications.
 
 ### Try it out
 
-Make sure to have git installed : https://git-scm.com/
+Make sure to have git installed: https://git-scm.com/
 
 ```
-git clone https://github.com/Akasxh/SpeakAI.git
+git clone https://github.com/Akasxh/TutorAI.git
 ```
 Now run
 ```
-cd SpeakAI
+cd TutorAI
 pip install –r requirements.txt
 streamlit run main.py
 ```
