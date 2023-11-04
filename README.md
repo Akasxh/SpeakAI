@@ -35,3 +35,12 @@ cd TutorAI
 pip install –r requirements.txt
 streamlit run main.py
 ```
+
+### Technology Stack
+
+__Streamlit__: The user interface is hosted on Streamlit, a Python library that simplifies web application development.
+
+__OpenAI API__: The OpenAI API is the backbone of the "Learn" and "Talk" features, providing natural language understanding and generation capabilities.
+
+__Langchain__: Langchain technology is integrated to enhance language understanding, making interactions more context-aware and informative.
+
