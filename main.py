@@ -29,7 +29,7 @@ if role_input == "Learn":
         help="Enter the position for which you want to learn",
     )
     st.session_state["Learn"] = (
-        interview_domain if Learn else "class 5th student"
+        Learn if Learn else "class 5th student"
     )
 
 
