@@ -112,67 +112,70 @@ if st.session_state.started:
             )
         print(st.session_state.cumulative_score)
         col1, col2, col3 = st.columns(3)
-        # CSS Styling to style custom components created below
-        stylesheet = """
-                <style>
-                    .rating-container{
-                        font-family:Poppins, Seouge-UI,sans-serif;
-                        display:grid;
-                        place-content:center;
-                        padding:0rem;
-                        border-radius:1rem;
-                        text-align:center;
+# CSS Styling to style custom components created below
+stylesheet = """
+    <style>
+        .rating-container {
+            font-family: Poppins, Seouge-UI, sans-serif;
+            display: grid;
+            place-content: center;
+            padding: 0rem;
+            border-radius: 1rem;
+            text-align: center;
+        }
+        
+        .rating-container h1 {
+            font-weight: 700;
+            font-size: 2rem;
+            text-align: center;
+            opacity: 0.6;
+        }
+        
+        .rating-container h3 {
+            font-weight: 400;
+            font-size: 1rem;
+            text-align: center;
+        }
+    </style>
+"""
 
-                    }
-                    .rating-container h1{
-                        font-weight: 700;
-                        font-size:2rem;
-                        text-align:center;
-                        opacity:0.6;
-                    }
-                    .rating-container h3{
-                        font-weight: 400;
-                        font-size:1rem;
-                        text-align:center;
-                    }
-                </style>
-            """
-        with col1:
-            components.html(
-                f"""{stylesheet}
-                    <div class='rating-container' style='background-color:#25EFAE;'>
-                        <h3>{list(rating.keys())[0]}</h3>
-                        <h1>{list(rating.values())[0]}</h1>
-                    </div>
-                """
-            )
+with col1:
+    components.html(
+        f"""{stylesheet}
+            <div class='rating-container' style='background-color:#25EFAE;'>
+                <h3>{list(rating.keys())[0]}</h3>
+                <h1>{list(rating.values())[0]}</h1>
+            </div>
+        """
+    )
 
-        with col2:
-            components.html(
-                f"""{stylesheet}
-                    <div class='rating-container' style='background-color:#B7A4FF;'>
-                        <h3>{list(rating.keys())[1]}</h3>
-                        <h1>{list(rating.values())[1]}</h1>
-                    </div>
-            """
-            )
+with col2:
+    components.html(
+        f"""{stylesheet}
+            <div class='rating-container' style='background-color:#B7A4FF;'>
+                <h3>{list(rating.keys())[1]}</h3>
+                <h1>{list(rating.values())[1]}</h1>
+            </div>
+        """
+    )
 
-        with col3:
-            components.html(
-                f"""{stylesheet}
-                    <div class='rating-container' style='background-color:#F1AA1E;'>
-                        <h3>{list(rating.keys())[2]}</h3>
-                        <h1>{list(rating.values())[2]}</h1>
-                    </div>
-            """
-            )
+with col3:
+    components.html(
+        f"""{stylesheet}
+            <div class='rating-container' style='background-color:#F1AA1E;'>
+                <h3>{list(rating.keys())[2]}</h3>
+                <h1>{list(rating.values())[2]}</h1>
+            </div>
+        """
+    )
 
-        with st.chat_message("assistant"):
-            st.markdown("**Suggestion**")
-            st.info(suggestion)
-        st.button(
-            label="Next",
-            type="primary",
-            on_click=update_ques_num,
-            key=st.session_state.ques_num,
-        )
+with st.chat_message("assistant"):
+    st.markdown("**Suggestion**")
+    st.info(suggestion)
+
+st.button(
+    label="Next",
+    type="primary",
+    on_click=update_ques_num,
+    key=st.session_state.ques_num,
+)
