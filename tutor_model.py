@@ -26,10 +26,6 @@ class Tutor:
         questions = llm.predict(self.situation)
         return questions.split("\n")
 
-    # Rates answers of given question based on following points
-    #  1. Creativity,
-    #  2. Clarity,
-    #  3. Effectiveness
     def rate_answer(self, question, answer):
         llm = OpenAI(openai_api_key=self.API_KEY, temperature=0)
         prompt = PromptTemplate.from_template(templates.answer_rating_template).format(
@@ -44,7 +40,6 @@ class Tutor:
         self.rating = rating
         return rating
 
-    # give suggestions based to improve rating on question and answer (ratng will be based on last call of get_rating)
 
     def get_suggestion(self, question, answer):
         # sorting dict wrt values
@@ -54,7 +49,7 @@ class Tutor:
         # first key of this dict (lowest rating)
         key = list(rating.keys())[0]
 
-        llm = OpenAI(openai_api_key=self.API_KEY, temperature=0.4)
+        llm = OpenAI(openai_api_key=self.API_KEY, temperature=0.6)
         prompt = PromptTemplate.from_template(templates.suggestion_template).format(
             question=question,
             answer=answer,
