@@ -23,8 +23,8 @@ role_input = st.selectbox(
     options=templates.role_list,
 )
 if role_input == "Learn":
-    interview_domain = st.text_input(
-        "Learning Place",
+    Learn = st.text_input(
+        "learning level:",
         placeholder="class 5th student",
         help="Enter the position for which you want to learn",
     )
@@ -52,7 +52,7 @@ if st.session_state.started:
         st.stop()
 
     if role_input == "Learn":
-        tutor = Tutor(api_key_input, role_input, st.session_state.interview_domain)
+        tutor = Tutor(api_key_input, role_input, st.session_state.Learn)
     else:
         tutor = Tutor(api_key_input, role_input)
 
