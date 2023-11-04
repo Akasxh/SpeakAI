@@ -4,7 +4,7 @@ import os
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.title("SpeakAI")
+st.title("TUTOR-AI")
 
 st.sidebar.markdown("# Setup\n")
 api_key_input = st.sidebar.text_input(
@@ -22,14 +22,14 @@ role_input = st.selectbox(
     "Select a Situation",
     options=templates.role_list,
 )
-if role_input == "Interview":
+if role_input == "Learn":
     interview_domain = st.text_input(
-        "Interview Domain",
-        placeholder="Software Engineer",
-        help="Enter the position for which you are taking interview",
+        "Learning Place",
+        placeholder="class 5th student",
+        help="Enter the position for which you want to learn",
     )
-    st.session_state["interview_domain"] = (
-        interview_domain if interview_domain else "Software Engineer"
+    st.session_state["Learn"] = (
+        interview_domain if Learn else "class 5th student"
     )
 
 
@@ -51,7 +51,7 @@ if st.session_state.started:
         st.error("Please enter your Open AI API key")
         st.stop()
 
-    if role_input == "Interview":
+    if role_input == "Learn":
         tutor = Tutor(api_key_input, role_input, st.session_state.interview_domain)
     else:
         tutor = Tutor(api_key_input, role_input)
@@ -68,15 +68,15 @@ if st.session_state.started:
     )
 
     if st.session_state.ques_num >= len(questions):
-        st.success("Congratulation. You have Completed the SpeakAI Session.")
-        st.markdown("Your Cumulative Score is:")
+        st.success("Congratulation. You have Completed the tution.")
+        st.markdown("Your Score is:")
         st.markdown(f"## {st.session_state.cumulative_score/15} / 10")
         st.stop()
 
     def update_ques_num():
         st.session_state.ques_num += 1
 
-    with st.chat_message("assistant"):
+    with st.chat_message("tutor"):
         st.markdown("**Question**")
         st.write(questions[st.session_state.ques_num])
 
