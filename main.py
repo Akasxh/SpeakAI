@@ -111,33 +111,31 @@ if st.session_state.started:
                 + int(list(rating.values())[2])
             )
         print(st.session_state.cumulative_score)
-        col1, col2, col3 = st.columns(3)
+        col2, col3 = st.columns(2)
         
-        # CSS Styling to style custom components created below
         stylesheet = """
                 <style>
-                    .rating-container{
-                        font-family:Poppins, Seouge-UI,sans-serif;
-                        display:grid;
-                        place-content:center;
-                        padding:0rem;
-                        border-radius:1rem;
-                        text-align:center;
-
+                    .rating-container {
+                        font-family: Poppins, Seouge-UI, sans-serif;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 1rem;
+                        border-radius: 1rem;
+                        text-align: center;
+                        margin: 0.5rem;
                     }
-                    .rating-container h1{
+                    .rating-container h1 {
                         font-weight: 700;
-                        font-size:2rem;
-                        text-align:center;
-                        opacity:0.6;
+                        font-size: 2rem;
+                        opacity: 0.6;
                     }
-                    .rating-container h3{
+                    .rating-container h3 {
                         font-weight: 400;
-                        font-size:1rem;
-                        text-align:center;
+                        font-size: 1rem;
                     }
                 </style>
-            """
+                """
 
         with col2:
             components.html(
@@ -146,7 +144,7 @@ if st.session_state.started:
                         <h3>{list(rating.keys())[1]}</h3>
                         <h1>{list(rating.values())[1]}</h1>
                     </div>
-            """
+                """
             )
 
         with col3:
@@ -156,7 +154,7 @@ if st.session_state.started:
                         <h3>{list(rating.keys())[2]}</h3>
                         <h1>{list(rating.values())[2]}</h1>
                     </div>
-            """
+                """
             )
 
         with st.chat_message("assistant"):
