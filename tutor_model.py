@@ -11,7 +11,7 @@ class Tutor:
         self.role = role
         self.API_KEY = API_KEY
 
-        if self.role == "Interview":
+        if self.role == "Learn":
             situation = PromptTemplate.from_template(
                 templates.role_templates[self.role]
             ).format(domain=domain)
