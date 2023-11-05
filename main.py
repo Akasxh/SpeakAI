@@ -138,15 +138,6 @@ if st.session_state.started:
                     }
                 </style>
             """
-        with col1:
-            components.html(
-                f"""{stylesheet}
-                    <div class='rating-container' style='background-color:#25EFAE;'>
-                        <h3>{list(rating.keys())[0]}</h3>
-                        <h1>{list(rating.values())[0]}</h1>
-                    </div>
-                """
-            )
 
         with col2:
             components.html(
