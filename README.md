@@ -4,6 +4,8 @@ __SLIDES__ : https://docs.google.com/presentation/d/1Fl7wl5mLuX_Gpv1DBFTr40d5a1K
 
 __DOCUMENT__ :https://drive.google.com/file/d/1nefidoTexItWCCA-r1yT74g5hBIJ25Bb/view?usp=sharing
 
+__HOW TO USE__:https://docs.google.com/presentation/d/1rgD5Gc7kOj_0LTpyhEyJm9NWE_pm0yxIFKZiBSDbbJY/edit?usp=sharing
+
 #### TutorAI: Unlocking Your Potential
 
 TutorAI is an innovative educational platform powered by OpenAI's GPT-3 and Langchain technologies. It offers three core features - "Learn," "Talk," and "Test" - to enhance the learning experience. Built using the Streamlit framework, TutorAI aims to revolutionize how learners interact with and consume educational content.
