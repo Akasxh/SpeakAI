@@ -25,11 +25,11 @@ role_input = st.selectbox(
 if role_input == "Learn":
     Learn = st.text_input(
         "learning level:",
-        placeholder="class 5th student",
-        help="Enter the position for which you want to learn",
+        placeholder="subject",
+        help="Enter the subject which you want to learn",
     )
     st.session_state["Learn"] = (
-        Learn if Learn else "class 5th student"
+        Learn if Learn else "math"
     )
 
 
