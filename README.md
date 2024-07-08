@@ -1,6 +1,6 @@
 # TutorAI
 
-__SLIDES__ : https://docs.google.com/presentation/d/1Fl7wl5mLuX_Gpv1DBFTr40d5a1K8nSQi9l45jqyTSg8/edit?usp=sharing
+__SLIDES__ : https://docs.google.com/presentation/d/1ZHfCLAz0H5t1kDtCNpTNRBSRuSfqwA0Ap_MCCVWIW6c/edit?usp=drive_link
 
 
 __DOCUMENT__ :https://drive.google.com/file/d/1nefidoTexItWCCA-r1yT74g5hBIJ25Bb/view?usp=sharing
