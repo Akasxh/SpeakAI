@@ -53,3 +53,12 @@ __OpenAI API__: The OpenAI API is the backbone of the "Learn" and "Talk" feature
 
 __Langchain__: Langchain technology is integrated to enhance language understanding, making interactions more context-aware and informative.
 
+
+## Contributors
+
+Team Lead - S Akash
+Yash Kamdar
+Ammar Ahmad
+Kushal Agarwal
+Aditya Agarwal
+
