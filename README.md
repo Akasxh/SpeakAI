@@ -57,8 +57,12 @@ __Langchain__: Langchain technology is integrated to enhance language understand
 ## Contributors
 
 Team Lead - S Akash
+
 Yash Kamdar
+
 Ammar Ahmad
+
 Kushal Agarwal
+
 Aditya Agarwal
 
