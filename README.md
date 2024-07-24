@@ -1,6 +1,6 @@
 # TutorAI
 
-__SLIDES__ : https://docs.google.com/presentation/d/1Fl7wl5mLuX_Gpv1DBFTr40d5a1K8nSQi9l45jqyTSg8/edit?usp=sharing
+__SLIDES__ : https://docs.google.com/presentation/d/1ZHfCLAz0H5t1kDtCNpTNRBSRuSfqwA0Ap_MCCVWIW6c/edit?usp=drive_link
 
 
 __DOCUMENT__ :https://drive.google.com/file/d/1nefidoTexItWCCA-r1yT74g5hBIJ25Bb/view?usp=sharing
@@ -52,4 +52,17 @@ __Streamlit__: The user interface is hosted on Streamlit, a Python library that 
 __OpenAI API__: The OpenAI API is the backbone of the "Learn" and "Talk" features, providing natural language understanding and generation capabilities.
 
 __Langchain__: Langchain technology is integrated to enhance language understanding, making interactions more context-aware and informative.
+
+
+## Contributors
+
+Team Lead - S Akash
+
+Yash Kamdar
+
+Ammar Ahmad
+
+Kushal Agarwal
+
+Aditya Agarwal
 
